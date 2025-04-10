@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&family=Rouge+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dwr8fxs.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dwr8fxs.css">
+  <link rel="icon" type="image/png" href="hartje.png">
+  <title>De Hobbieklup 🧑🏼‍🎨💃🏼</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "p22-nudgewink-pro", sans-serif;
+      background: linear-gradient(135deg, #ffcccc 0%, #ffd8e8 50%, #ffecf2 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      cursor: url('aardige_cursor.png'), pointer;
+      transition: background-color .1s;
+      text-align: center;
+    }
+
+    header {
+      background: #ffffff88;
+      background-image: url(bloemetje.png);
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #ffd8e8;
+    }
+
+    header h1 {
+      font-family: 'Barriecito';
+      font-size: 2.5rem;
+      margin: 50px;
+      color: #ff5e91;
+      letter-spacing: 2px;
+      transition: all .2s;
+    }
+
+    @media screen and (max-width: 800px) {
+      header h1 {
+        font-size: 1.8rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    .instagram-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #ff64a3;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .instagram-button:hover {
+      background-color: #ff8dbd;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1.5rem;
+      gap: 2rem;
+    }
+
+    section {
+      background-color: #ffffffdd;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(255, 128, 179, 0.2);
+      max-width: 350px;
+      width: 100%;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #ff64a3;
+      margin-bottom: 1rem;
+    }
+
+    section img {
+      margin: 5px;
+      border-radius: 8px;
+      box-shadow: 3px 3px 6px #00000033;
+    }
+
+    /* Formulieren */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      color: #ff64a3;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #ffd8e8;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button[type="submit"] {
+      background-color: #ff64a3;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ff8dbd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff88;
+      border-top: 2px solid #ffd8e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>de Hobbieklup&trade; :)</h1>
+    <script>
+      setInterval(() => {
+        document.querySelector('h1').style.transform = `translateY(${Math.random() * 10}px) rotate(${Math.random() * 5 - 2.5}deg)`;
+        document.querySelector('h1').style.letterSpacing = Math.random() * 5 + 'px';
+        // document.querySelector('h1').style.fontFamily = ['italic', 'Times New Roman', 'Courier New', 'Consoloas', 'mono'][Math.floor(Math.random() * 3)];
+      }, 500);
+    </script>
+    <nav>
+      <a class="instagram-button" href="https://www.instagram.com/dehobbieklup" style="color: black; height: 42px" target="_blank">
+        <img src="instagram.svg" width="20" alt="">
+        <span style="position: relative; top: -5px;">Ons grammetje</span>
+      </a>
+      <br><br>
+      Meel ons: <a href="mailto:huppelepup@dehobbieklup.nl" style="color:#ff5e91; font-size: 20px;">huppelepup@dehobbieklup.nl</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- koekjes menu -->
+
+    <a class="home" href="http://funda.nl">
+      home 🏠
+    </a>
+    <div class="letters">
+      <script>
+        function HL() {
+          document.querySelector('h1').innerText = document.querySelector('h1').innerText.toLocaleUpperCase();
+          document.querySelectorAll('h2').forEach(jeppe => {
+            jeppe.innerText = jeppe.innerText[0].toLocaleUpperCase() + jeppe.innerText.slice(1);
+          })
+        }
+        function KL() {
+          document.querySelector('h1').innerText = document.querySelector('h1').innerText.toLocaleLowerCase();
+          document.querySelectorAll('h2').forEach(jeppe => {
+            jeppe.innerText = jeppe.innerText[0].toLocaleLowerCase() + jeppe.innerText.slice(1);
+          })
+        }
+      </script>
+      <a class="hoofdletters" onclick="HL()">D🇳🇱</a>
+      <a class="geenhoofdletters" onclick="KL()">d🇳🇱</a>
+    </div>
+    <style>
+      .home {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        margin: 10px 10px;
+      }
+      .letters {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        margin: 10px 10px;
+      }
+      .letters button {
+        padding: 10px;
+      }
+    </style>
+
+    <section>
+      <h2>Hoi, wij zijn de Hobbieklup&trade;!</h2>
+      <p>We houden van hobbies en we willen graag heel veel hobbies uitproberen. Doe je mee?</p>
+      <img src="broe_viool.webp" width="120" alt="">
+      <img src="jeppe_haken.webp" width="120" alt="">
+    </section>
+
+    <section>
+      <h2>Je hebt gelijk, we moeten ons even voorstellen</h2>
+      <p>Wij zijn de oprichters van de Hobbieklup&trade;:</p>
+      <br>
+
+      <div class="founder-profile">
+        <img src="jeppe2.webp" alt="Joëppe de Poëppe" class="founder-photo">
+        <div class="founder-info">
+          <h3>Joëppe de Poëppe</h3>
+          <p>Oprichter van de Hobbieklup&trade;</p>
+          <p>Leeftijd: 19</p>
+          <p>Hobbies: ja</p>
+        </div>
+      </div>
+    
+      <div class="founder-profile">
+        <img src="broe2.webp" alt="Oprichter 2" class="founder-photo">
+        <div class="founder-info">
+          <h3>Broeé overflakkee Sitaties BV</h3>
+          <p>Ook oprichter van de Hobbieklup&trade;</p>
+          <p>Leeftijd: 33</p>
+          <p>Hobbies: ja, leuk</p>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+      .founder-profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+    
+      .founder-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: .7rem;
+        border: 4px solid #ffc28d;
+        box-shadow: none;
+      }
+    
+      .founder-info h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    
+      .founder-info p {
+        margin: 0.25rem 0 0 0;
+        color: #666;
+        text-align: left;
+      }
+    </style>
+
+    <section>
+      <h2>Onze leuke leden (hobjes)</h2>
+      <p>Maar we hebben ook allemaal gezellige leden (hobjes), zoals:</p>
+      <table>
+        <tr><td><span style="background: black; color: black;">Geheim</span></td></tr>
+        <tr><td><span style="background: black; color: black;">Geheim</span></td></tr>
+        <tr><td><span style="background: black; color: black;">Geheim</span></td></tr>
+        <tr><td><span style="background: black; color: black;">Geheim</span></td></tr>
+      </table>
+      <img src="schmutzig.webp" width="200" alt="">
+      <p>Dat merk je wel bij de ontgroening.</p>
+      <p>Nee grapje we zien er misschien altijd heel gaaf uit maar we zijn eigenlijk stiekem heel moppig voor iedereen niet doorvertellen hoor</p>
+    </section>
+
+    <style>
+      table {
+        width: 50%;
+        border: 1px solid #ff64a3;
+        margin: 5px auto;
+        position: relative;
+      }
+
+      table::after {
+        content: "Dat is geheim";
+        position: absolute;
+        top: 33%;
+        left: 10%;
+        font-size: 30px;
+        color: #ff64a3;
+        transform: rotate(-45deg);
+      }
+    
+      table td {
+        border: 1px solid #ff64a3;
+        padding: 2px;
+      }
+    </style>
+
+    <!-- <section>
+      <h2>schrijf je in (bitch)</h2>
+      <p>word hobje (dat is het lid-woord (lit)) van onze leukste hobbieklup.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="naam">Naam:</label>
+          <input type="text" id="naam" name="naam" required />
+        </div>
+        <div>
+          <label for="email">E-mailadres:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="email">Ben je single:</label>
+          <select name="" id="">
+            <option value="">ja</option>
+            <option value="">nee</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Heb je een paard:</label>
+          <select name="" id="">
+            <option value="">ja</option>
+            <option value="">ja maar hij is dood</option>
+            <option value="">misschien</option>
+          </select>
+        </div>
+        <div>
+           <label for="fotootj">Upload hier een leuke foto (met je (dode) paard)</label>
+           <input type="file" name="fotootj">
+        </div>
+        <button class="inschrijven-btn" style="transition: transform 1s" type="submit">Inschrijven</button>
+        <script>
+          document.querySelector('.inschrijven-btn').onclick = () => {
+            document.querySelector('table').innerHTML += `<tr><td>${document.querySelector('#naam').value}</td></tr>`;
+            document.querySelector('.inschrijven-btn').style.transform = `translateY(${400}px) rotate(${45}deg) scale(0)`;
+          };
+        </script>
+      </form>
+    </section>
+
+    <section>
+      <h2>heb jij een idee? (vast niet)</h2>
+      <p>Welke hobby moeten we zeker eens misschien wel eens aanstalten maken om te gaan proberen te proberen? misschien</p>
+      <form action="#" method="post">
+        <div>
+          <label for="hobby-idee">Hobby idee:</label>
+          <textarea id="hobby-idee" name="hobby-idee" placeholder="Geef hier je suggestie..." required></textarea>
+        </div>
+        <button type="submit">Versturen</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>dit zijn we dan</h2>
+      <p>Hoi dit zijn twee fotootjes van ons (de oprichters van de klup)</p>
+      
+    </section>
+
+    <section>
+      <h2>hobjes</h2>
+      <p>dit zijn al onze leuke leden (niet allemaal)</p>
+      <table>
+        <tr><td>jep</td></tr>
+        <tr><td>broe</td></tr>
+        <tr><td>heinen</td></tr>
+        <tr><td>nel</td></tr>
+        <tr><td>doreille</td></tr>
+        <tr><td>noen</td></tr>
+        <tr><td>fem</td></tr>
+        <tr><td>swinkie</td></tr>
+        <tr><td>andre</td></tr>
+      </table>
+      <style>
+        table {
+          width: 50%;
+          border: 1px solid #ff64a3;
+        }
+
+        table td {
+          border: 1px solid #ff64a3;
+        }
+
+        table td:first-child {
+          font-weight: bold;
+        }
+      </style>
+    </section> -->
+  </main>
+
+  <h1 style="break-after: page; clear: both; page-break-after: always;">...Nou je bent vast al overtuigd</h1>
+
+<main>
+  <section>
+    <h2>Schrijf je in voor de Hobbieklup&trade;</h2>
+    <h3 class="tijdelijke-actie" style="color: #c28dff">
+      Tijdelijke actie: 1 hobbie gratis cadeau als je je inschrijft voor de hobbie-nieuwsbrief*
+    </h3>
+    <script>
+      let knipper = false;
+      setInterval(() => {
+        knipper = !knipper;
+        document.querySelector('.tijdelijke-actie').style.color = knipper ? '#ffc28d' : '#c28dff';
+        document.querySelector('span.tijdelijke-actie').style.color = knipper ? '#ffc28d' : '#c28dff';
+      }, 500)
+    </script>
+    <p>We zorgen goed voor onze hobjes 😙</p>
+    <p>Als je je inschrijft sturen we je meeltjes over hobbies</p>
+    <p>en dan moet je meedoen**.</p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+    
+      <!-- Replace with your Access Key -->
+      <input type="hidden" name="access_key" value="e6b04818-26eb-4fae-be9f-00e248dc9f93">
+    
+      <!-- Form Inputs. Each input must have a name="" attribute -->
+      <input type="text" name="name" placeholder="Je naam" required>
+      <input type="email" name="email" placeholder="Je iemeel" required>
+      <textarea name="message" placeholder="Ideeen voor hobbies?" required></textarea>
+    
+      <!-- Honeypot Spam Protection -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+      <!-- Custom Confirmation / Success Page -->
+      <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+      <button type="submit">Word hobje !!!</button>
+      <span style="font-size: 14px; color: #c28dff" class="tijdelijke-actie">* de andere hobbies zijn ook gratis maar goed de m van marketing eh</span>
+      <span style="font-size: 14px">** we hebben een zero-tolerance beleid voor niet mee doen, maar je mag wel afzeggen</span>
+    </form>
+
+    <style>
+      form input, form textarea, form input::placeholder, form textarea::placeholder, form button {
+        font-family: "p22-nudgewink-pro", sans-serif;
+      }
+
+      form input, form textarea {
+        background: linear-gradient(90deg, #fff 25%, #ff5e9122 50%, #fff 75%);
+      }
+
+      form button {
+        font-size: 20px;
+        transition: all .5s !important;
+      }
+
+      form button:hover {
+        font-size: 20px;
+        border-top: 2px solid #ff5e91 !important;
+        border-left: 2px solid #ff5e91 !important;
+        /* border-bottom: 2px solid #00000022 !important;
+        border-right: 2px solid #00000022 !important; */
+        background: linear-gradient(180deg, #edf686, #ff5e91) !important;
+      }
+    </style>
+  </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2005 De Hobbieklup&trade;</p>
+    <br>
+    <img src="h6ml76iiiec51.png" width="60px" style="margin: 0 auto">
+    <br>
+    Producties BV
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <a href="https://nl.wikipedia.org/wiki/Paasei">paasei 🐣</a>
+  </footer>
+
+  <audio src="mario-kart-8-deluxe-star-sound-made-with-Voicemod.mp3" controls autoplay loop hidden></audio>
+  <script>
+    let achtergrond = 0;
+    setInterval(() => {
+      document.body.style.background = `hsl(${achtergrond += 10}, 100%, 90%)`;
+    }, 100);
+  </script>
+</body>
+</html>
