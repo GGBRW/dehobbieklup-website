@@ -465,6 +465,21 @@
 
       form input, form textarea {
         background: linear-gradient(90deg, #fff 25%, #ff5e9122 50%, #fff 75%);
+        background-size: 200% 100%; /* dubbel zo breed zodat je kunt schuiven */
+        animation: moveBackground 2s linear infinite;
+        transition: background-position 0.5s;
+      }
+
+      @keyframes moveBackground {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 0%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
       }
 
       form button {
