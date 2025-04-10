@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&family=Rouge+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dwr8fxs.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dwr8fxs.css">
+  <link rel="icon" type="image/png" href="hartje.png">
+  <title>De Hobbieklup 🧑🏼‍🎨💃🏼</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "p22-nudgewink-pro", sans-serif;
+      background: linear-gradient(135deg, #ffcccc 0%, #ffd8e8 50%, #ffecf2 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      cursor: url('aardige_cursor.png'), pointer;
+      transition: background-color .1s;
+      text-align: center;
+    }
+
+    header {
+      background: #ffffff88;
+      background-image: url(bloemetje.png);
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #ffd8e8;
+    }
+
+    header h1 {
+      font-family: 'Barriecito';
+      font-size: 2.5rem;
+      margin: 50px;
+      color: #ff5e91;
+      letter-spacing: 2px;
+      transition: all .2s;
+    }
+
+    @media screen and (max-width: 800px) {
+      header h1 {
+        font-size: 1.8rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    .instagram-button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #ff64a3;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .instagram-button:hover {
+      background-color: #ff8dbd;
+    }
+
+    main {
+      flex: 1;
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      /* align-items: flex-start; */
+      padding: 1.5rem;
+      gap: 2rem;
+    }
+
+    section {
+      background-color: #ffffffdd;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(255, 128, 179, 0.2);
+      max-width: 350px;
+      width: 100%;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #ff64a3;
+      margin-bottom: 1rem;
+    }
+
+    section img {
+      margin: 5px;
+      border-radius: 8px;
+      box-shadow: 3px 3px 6px #00000033;
+    }
+
+    /* Formulieren */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    label {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+      color: #ff64a3;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 2px solid #ffd8e8;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button[type="submit"] {
+      background-color: #ff64a3;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #ff8dbd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff88;
+      border-top: 2px solid #ffd8e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>de Hobbieklup&trade; :)</h1>
+    <script>
+      setInterval(() => {
+        document.querySelector('h1').style.transform = `translateY(${Math.random() * 10}px) rotate(${Math.random() * 5 - 2.5}deg)`;
+        document.querySelector('h1').style.letterSpacing = Math.random() * 5 + 'px';
+        // document.querySelector('h1').style.fontFamily = ['italic', 'Times New Roman', 'Courier New', 'Consoloas', 'mono'][Math.floor(Math.random() * 3)];
+      }, 500);
+    </script>
+    <nav>
+      <a class="instagram-button" href="https://www.instagram.com/dehobbieklup" style="color: black; height: 42px" target="_blank">
+        <img src="instagram.svg" width="20" alt="">
+        <span style="position: relative; top: -5px;">Ons grammetje</span>
+      </a>
+      <br><br>
+      Meel ons: <a href="mailto:huppelepup@dehobbieklup.nl" style="color:#ff5e91; font-size: 20px;">huppelepup@dehobbieklup.nl</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bedankt voor het inschrijven!!!</h1>
+    <h2>Je bent nu offici&euml;el een hobje</h2>
+    <h1>🧑🏼‍🎨💃🏼</h1>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2005 De Hobbieklup&trade;</p>
+    <br>
+    <img src="h6ml76iiiec51.png" width="60px" style="margin: 0 auto">
+    <br>
+    Producties BV
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <a href="https://nl.wikipedia.org/wiki/Paasei">paasei 🐣</a>
+  </footer>
+
+  <audio src="mario-kart-8-deluxe-star-sound-made-with-Voicemod.mp3" controls autoplay loop hidden></audio>
+  <script>
+    let achtergrond = 0;
+    setInterval(() => {
+      document.body.style.background = `hsl(${achtergrond += 10}, 100%, 90%)`;
+    }, 100);
+  </script>
+</body>
+</html>
