@@ -140,7 +140,7 @@
     }
 
     button[type="submit"] {
-      background-color: #ff64a3;
+      background-color: hsl(336, 100%, 70%);
       color: #fff;
       padding: 0.75rem 1.5rem;
       border: none;
@@ -164,6 +164,39 @@
 </head>
 <body>
   <header>
+    <canvas id="krabbeltjes"></canvas>
+
+    <script>
+      const canvas = document.querySelector('#krabbeltjes');
+      canvas.width = 80 * (innerWidth / innerHeight); canvas.height = 80;
+      const ctx = canvas.getContext('2d');
+
+      setInterval(() => {
+        ctx.beginPath();
+        ctx.moveTo(Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.quadraticCurveTo(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * canvas.width, Math.random() * canvas.height);
+        ctx.strokeStyle = `hsl(${Math.random() * 360}, 100%, 70%)`;
+        ctx.stroke();
+      }, 250)
+    </script>
+
+    <style>
+      header {
+        position: relative;
+        overflow: hidden;
+        height: 280px;
+      }
+      #krabbeltjes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100%;
+      }
+    </style>
+
+
     <h1>de Hobbieklup&trade; :)</h1>
     <script>
       setInterval(() => {
